@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-&82yjy48&l$_3vx3kc464^8tyq!xdb2i20tkom0*%@(e6-wz!w"
+SECRET_KEY = "django-insecure-55hk65n0u4%hs-7bsp2w=esef7f(efgi6ppg#(p=0^vj!$k7zp"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -144,7 +144,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Default primary key field type
-# https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
+# https://docs.djangoproject.com/en/4.2/ref/settings/#def
+# ault-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
