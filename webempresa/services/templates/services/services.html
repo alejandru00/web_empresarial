@@ -3,30 +3,22 @@
 {% block title %}Servicios{% endblock %}
 {% block content %}
 
-
 <!-- Listado de servicios -->
 {% for service in services reversed %}
 <section class="page-section">
   <div class="container">
-    <div class="product-item">
-      <div class="product-item-title d-flex">
-        <div class="bg-faded p-5 d-flex mr-auto rounded">
-          <h2 class="section-heading mb-0">
-            <span class="section-heading-upper">
-              {{ service.subtitle }}
-            </span>
-            <span class="section-heading-lower">
-              {{ service.title }}
-            </span>
-          </h2>
-        </div>
+    <div class="product-item d-flex align-items-center flex-wrap">
+      <!-- Contenedor de texto -->
+      <div class="text-container bg-faded p-5 rounded flex-grow-1">
+        <h2 class="section-heading mb-4">
+          <span class="section-heading-upper">{{ service.subtitle }}</span>
+          <span class="section-heading-lower">{{ service.title }}</span>
+        </h2>
+        <p>{{ service.content }}</p>
       </div>
-      <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3"
-           src="{{ service.image.url }}" alt="{{ service.title }}">
-      <div class="product-item-description d-flex ml-auto">
-        <div class="bg-faded p-5 rounded">
-          <p class="mb-0">{{ service.content }}</p>
-        </div>
+      <!-- Contenedor de imagen -->
+      <div class="image-container flex-grow-1 text-center">
+        <img class="product-item-img rounded img-fluid shadow" src="{{ service.image.url }}" alt="{{ service.title }}">
       </div>
     </div>
   </div>
