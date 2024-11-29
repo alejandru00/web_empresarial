@@ -15,8 +15,8 @@
 							</h2>
 							<p class="mb-0">
 								{% if post.image %}
-								<img class="mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="{{post.image.url}}" alt="" style="width: 700px;height: 300px; object-fit: cover;">
-								{% endif %}
+                                <img class="custom-image" src="{{post.image.url}}" alt="" style="width: 700px;height: 300px; object-fit: cover;">                                                     
+                                {% endif %}
 							</p>
 							<p class="mb-0 mbt" style="text-align: left;">
 								{{post.content|safe}}

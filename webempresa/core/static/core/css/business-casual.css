@@ -357,3 +357,15 @@ ul.errorlist{
   padding: 2rem;
 }
 
+.image-overlap {
+  margin-bottom: -50px; /* Pulls the image upwards */
+  position: relative; /* Ensures the positioning is relative to its container */
+  z-index: 2; /* Ensures the image is above other elements */
+}
+
+.custom-image {
+  position: relative;
+  margin-top: -50px; /* Ajusta según sea necesario */
+  z-index: 10; /* Asegura que la imagen esté encima del cuadro */
+}
+  
